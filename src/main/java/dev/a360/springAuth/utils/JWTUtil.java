@@ -53,6 +53,6 @@ public class JWTUtil implements Serializable, EnvironmentAware {
 
     @Override
     public void setEnvironment(Environment environment) {
-        this.secret = environment.getProperty("JWT_SECRET");
+        this.secret = environment.getProperty("jwt.secret");
     }
 }
